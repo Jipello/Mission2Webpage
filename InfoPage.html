@@ -1,0 +1,33 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    <!--initialising audio-->
+    <audio id="myAudio">
+        <source src="Background Music.mp3" type="audio/mpeg">
+    </audio>
+
+    <p>Click Here</p>
+
+    <button onclick="playAudio()" type="button">Click for Reward</button>
+
+    <script>
+        
+        //code for audio
+        var x = document.getElementById("myAudio");
+
+        function playAudio() {
+            x.play();
+        }
+
+        function pauseAudio() {
+            x.pause();
+        }
+
+    </script>
+
+</body>
+
+</html>
