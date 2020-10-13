@@ -1,29 +1,210 @@
 <html>
 
 <head>
+    <link id="pagestyle" rel="stylesheet" href="InfoPage.css" type="text/css">
 </head>
 
 <body>
-    <!--initialising audio-->
+    <header>
+        <div id='pageTitle'></div>
+    </header>
+
+    <!--navigation bar-->
+    <nav id='menu'>
+        <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+        <ul>
+            <li><a href='#whatAreThey'>What are They</a></li>
+            <li><a href='#whatsSoGreat'>Whats so Great</a></li>
+            <li><a class='dropdown-arrow' href='#top3'>Top 3 Picks</a>
+                <ul class='sub-menus'>
+                    <li><a href='#dog'>Dogs</a></li>
+                    <li><a href='#cat'>Cats</a></li>
+                    <li><a href='#rabbit'>Rabbits</a></li>
+                </ul>
+            </li>
+            <li><a href='http://'>Post a Comment</a></li>
+        </ul>
+    </nav>
+
+    <!--introduction-->
+    <section>
+        <a name="whatAreThey"></a>
+
+        <!--image displayed at top of page-->
+        <div id="topImage"></div>
+
+        <div id="intro">
+            <h2>Introduction </h2>
+            <p>
+                My name is Fredrico and I am an avid fluffy animal owner and enthusiast. My
+                passoin started at the late age of 38, I want to maybe share and converse with
+                other fluffy animal
+                lovers which is why made a forum dedicated to why fluffy animals are the best,
+                we can go indepth as to why fluffy animals should get the world and more and
+                what makes them deserving of such.
+            </p>
+        </div>
+    </section>
+
+    <!--first paragraph-->
+    <section>
+        <a name="whatAreThey"></a>
+        <div id="whatAreThey">
+            <h2>What are They</h2>
+            <p>
+                If you dont know what a fluffy animal is then what the hell are you doing with
+                your life, they are only the greatest thing mother nature has created, But if
+                you are one of those rare souls then worry not child, let me enlighten you.
+                It is the most simple yet genius combination ever to lay its feet on this earth,
+                Fluff, plus any animal of your choice. you may think its simple but I know you
+                cannot resist.
+            </p>
+        </div>
+
+    </section>
+
+    <!--before after-->
+        <button onclick="document.getElementById('beforeAfter').src='before.png'">Before Fluff</button>
+        <img id="beforeAfter" src="before.png" style="width:100px">
+        <button onclick="document.getElementById('beforeAfter').src='smiley.png'">After Fluff</button>
+
+    <!--second paragraph-->
+    <section>
+        <a name="whatsSoGreat"></a>
+        <div id="whatsSoGreat">
+            <h2>Whats so Great</h2>
+            <p>
+                Ok so if you still need to know what is so great about these majestic fluffy
+                beasts then I dont know if I can help or convince you... but Im still gonna
+                talk about how much I love them so listen up.
+            </p>
+            <h3>The Looks</h3>
+            <p>
+                A fluffy animal is a soft companion whos eyes could buckle the knees of a
+                giant at a simple glance, and whos fur can make a years worth of stress go
+                away with a simple hug. No matter how you interact with them, whether it
+                be through the screen of your device or a glance accross the park, a fluffy
+                animal will make your face scrunch up and make you greatful for every event
+                that happened in your life lead to that scene of events where you saw that
+                fluffball.
+            </p>
+            <h3>The benefits</h3>
+            <p>
+                have you ever had problems initiating conversation with the sex of preference,
+                well my friend that wish is going to become a reality after adopting yourself
+                a fluffy animal, whats even beter is that you dont even have to initiate, the
+                magnetic pull of your pets pure and precious face will drop the jaws of everyone
+                who sees them, very soon youll be hearing "nawww so cute" and "can I pet them,
+                oh sorry I forgot to ask your name" (timeless classic). The fluffy animal has
+                a passive ability called "appreciation" which causes you to feel gratitude
+                towards everything that you didnt think you could even feel grateful for,
+                an example being the peson who cut ahead in line at the icecream stand,
+                but actually because of that you get to see a cute pomeranian trot past and
+                BOOM! you are now appreciative that the paerson who cut in line did so.
+            </p>
+        </div>
+
+    </section>
+
+    <section class="center">
+        <a name="dog"></a>
+        <div id="animal">
+            <h2>About me</h2>
+            <p>
+                I am an up and coming programmer and I want <b>YOU!</b> to give me your money
+                and as much of it as possible. born in X town in the year Y, I am Z years of
+                age and have the skills needed to make <del>MY</del> OUR wants a reality.
+            </p>
+        </div>
+
+        <div id="dog"></div>
+    </section>
+
+    <section class="center">
+        <a name="cat"></a>
+        <div id="animal">
+            <h2>About me</h2>
+            <p>
+                I am an up and coming programmer and I want <b>YOU!</b> to give me your money
+                and as much of it as possible. born in X town in the year Y, I am Z years of
+                age and have the skills needed to make <del>MY</del> OUR wants a reality.
+            </p>
+        </div>
+
+        <div id="cat"></div>
+    </section>
+
+    <section class="center">
+        <a name="rabbit"></a>
+        <div id="animal">
+            <h2>About me</h2>
+            <p>
+                I am an up and coming programmer and I want <b>YOU!</b> to give me your money
+                and as much of it as possible. born in X town in the year Y, I am Z years of
+                age and have the skills needed to make <del>MY</del> OUR wants a reality.
+            </p>
+        </div>
+
+        <div id="rabbit"></div>
+    </section>
+
+    <section class="contactme">
+        <div id="contactme">
+          <h2>Contact me if you're Interested</h2>
+          <form action="mailto:someone@example.com" method="post">
+            <!--name, email, and date user interactable-->
+            <label>Name:</label><input type="text" name="name" required placeholder="Your Name"><br>
+            <label>Email: </label><input type="text" name="email" required placeholder="someone@example.com"><br>
+            <label>Date: </label><input type="date" name="date1"><br>
+            <!--radio buttons user interactable-->
+            <label>Amount:</label><br>
+            <input type="radio" name="subject2" value="sales"><label>$50</label><br>
+            <input type="radio" name="subject2" value="support"><label>$100</label><br>
+            <input type="radio" name="subject2" value="others"><label>Amount you want to Give</label><br>
+            <!--textbox user interactable-->
+            <label>Comment:</label><textarea name="comments">eg. $1,000,000,000</textarea><br>
+            <!--submit and clear buttons user interactable-->
+            <input type="submit" value="Send">
+            <input type="reset" value="Clear">
+          </form>
+        </div>
+      </section>
+
+
+    <!--fetching audio-->
     <audio id="myAudio">
         <source src="Background Music.mp3" type="audio/mpeg">
     </audio>
 
-    <p>Click Here</p>
-
-    <button onclick="playAudio()" type="button">Click for Reward</button>
+    <!--button display change & audio-->
+    <button onclick="swapStyleSheet('InfoPageD.css')"> Post Comment </button>
 
     <script>
-        
-        //code for audio
-        var x = document.getElementById("myAudio");
 
-        function playAudio() {
-            x.play();
+        //menu code 
+        function updatemenu() {
+            if (document.getElementById('responsive-menu').checked == true) {
+                document.getElementById('menu').style.borderBottomRightRadius = '0';
+                document.getElementById('menu').style.borderBottomLeftRadius = '0';
+            } else {
+                document.getElementById('menu').style.borderRadius = '0px';
+            }
         }
 
-        function pauseAudio() {
-            x.pause();
+        //audio play pause
+
+        //button css change audio code
+        function swapStyleSheet(sheet) {
+            var y = "RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN RUN";
+            var x = document.getElementById("myAudio");
+            x.play();
+
+            document.getElementById('pagestyle').setAttribute('href', sheet);
+            document.getElementById('whatsSoGreat').innerHTML = y;
+            document.getElementById('whatAreThey').innerHTML = y;
+            document.getElementById('intro').innerHTML = y;
+            document.getElementById('animal').innerHTML = y;
+
         }
 
     </script>
