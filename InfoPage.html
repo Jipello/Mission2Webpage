@@ -64,9 +64,9 @@
     </section>
 
     <!--before after-->
-        <button onclick="document.getElementById('beforeAfter').src='before.png'">Before Fluff</button>
-        <img id="beforeAfter" src="before.png" style="width:100px">
-        <button onclick="document.getElementById('beforeAfter').src='smiley.png'">After Fluff</button>
+    <button onclick="document.getElementById('beforeAfter').src='before.png'">Before Fluff</button>
+    <img id="beforeAfter" src="before.png" style="width:100px">
+    <button onclick="document.getElementById('beforeAfter').src='smiley.png'">After Fluff</button>
 
     <!--second paragraph-->
     <section>
@@ -100,20 +100,25 @@
                 towards everything that you didnt think you could even feel grateful for,
                 an example being the peson who cut ahead in line at the icecream stand,
                 but actually because of that you get to see a cute pomeranian trot past and
-                BOOM! you are now appreciative that the paerson who cut in line did so.
+                BOOM! you are now appreciative that the person who cut in line did so.
             </p>
         </div>
 
+    </section>
+    <section>
+        <a name="dog"></a>
+        <div id="animal">
+            <h2>Top 3 Picks</h2>
+        </div>
     </section>
 
     <section class="center">
         <a name="dog"></a>
         <div id="animal">
-            <h2>About me</h2>
+            <h2>Dog</h2>
             <p>
-                I am an up and coming programmer and I want <b>YOU!</b> to give me your money
-                and as much of it as possible. born in X town in the year Y, I am Z years of
-                age and have the skills needed to make <del>MY</del> OUR wants a reality.
+                Im so bored of making up and typing up new paragraphs. Im pretty sure half 
+                of it doesnt even make sense.
             </p>
         </div>
 
@@ -123,11 +128,12 @@
     <section class="center">
         <a name="cat"></a>
         <div id="animal">
-            <h2>About me</h2>
+            <h2>Cat</h2>
             <p>
-                I am an up and coming programmer and I want <b>YOU!</b> to give me your money
-                and as much of it as possible. born in X town in the year Y, I am Z years of
-                age and have the skills needed to make <del>MY</del> OUR wants a reality.
+                Omg so much custom text just for this stupid website about fluffy animals
+                why did I think that was a good idea there was the simple option to just copy
+                and paste why didnt you just do that oh I know its because youre an 
+                idiot Fredrico a goddamn idiot.
             </p>
         </div>
 
@@ -137,11 +143,13 @@
     <section class="center">
         <a name="rabbit"></a>
         <div id="animal">
-            <h2>About me</h2>
+            <h2>Rabbit</h2>
             <p>
-                I am an up and coming programmer and I want <b>YOU!</b> to give me your money
-                and as much of it as possible. born in X town in the year Y, I am Z years of
-                age and have the skills needed to make <del>MY</del> OUR wants a reality.
+                Filler text Filler text Filler text Filler text Filler text Filler text 
+                Filler text Filler text Filler text Filler text Filler text Filler text 
+                Filler text Filler text Filler text Filler text Filler text Filler text 
+                Filler text Filler text Filler text Filler text Filler text Filler text 
+                Filler text Filler text Filler text Filler text Filler text Filler text 
             </p>
         </div>
 
@@ -150,34 +158,26 @@
 
     <section class="contactme">
         <div id="contactme">
-          <h2>Contact me if you're Interested</h2>
-          <form action="mailto:someone@example.com" method="post">
-            <!--name, email, and date user interactable-->
-            <label>Name:</label><input type="text" name="name" required placeholder="Your Name"><br>
-            <label>Email: </label><input type="text" name="email" required placeholder="someone@example.com"><br>
-            <label>Date: </label><input type="date" name="date1"><br>
-            <!--radio buttons user interactable-->
-            <label>Amount:</label><br>
-            <input type="radio" name="subject2" value="sales"><label>$50</label><br>
-            <input type="radio" name="subject2" value="support"><label>$100</label><br>
-            <input type="radio" name="subject2" value="others"><label>Amount you want to Give</label><br>
-            <!--textbox user interactable-->
-            <label>Comment:</label><textarea name="comments">eg. $1,000,000,000</textarea><br>
-            <!--submit and clear buttons user interactable-->
-            <input type="submit" value="Send">
-            <input type="reset" value="Clear">
-          </form>
+            <h2>Please post a comment (it actually does something)</h2>
+            <form action="mailto:someone@example.com" method="post">
+                <!--name, email, and date user interactable-->
+                <label>Name:</label><input type="text" name="name" required placeholder="Your Name"><br>
+                <label>Email: </label><input type="text" name="email" required placeholder="someone@example.com"><br>
+                <!--textbox user interactable-->
+                <label>Comment:</label><textarea name="comments">eg. your website sucks</textarea><br>
+                <!--submit and clear buttons user interactable-->
+                <!--button display change & audio-->
+                <button onclick="swapStyleSheet('InfoPageD.css')"> Post Comment </button>
+                <input type="reset" value="Clear">
+            </form>
         </div>
-      </section>
+    </section>
 
 
     <!--fetching audio-->
     <audio id="myAudio">
         <source src="Background Music.mp3" type="audio/mpeg">
     </audio>
-
-    <!--button display change & audio-->
-    <button onclick="swapStyleSheet('InfoPageD.css')"> Post Comment </button>
 
     <script>
 
@@ -204,6 +204,7 @@
             document.getElementById('whatAreThey').innerHTML = y;
             document.getElementById('intro').innerHTML = y;
             document.getElementById('animal').innerHTML = y;
+
 
         }
 

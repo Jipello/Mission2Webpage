@@ -4,9 +4,6 @@ input{
 label{
   font-family: Tahoma, sans-serif;
 }
-input[type=radio] {
-  width: 20px;
-}
 /*underlines for user and email*/
 input[type=text], [type=email] {
   padding: 2px 2px;
@@ -17,11 +14,7 @@ input[type=text], [type=email] {
 textarea{
   border: 2px solid  #2BC71A;
 }
-input[type=submit] {
-  background-color: #2BC71A;
-  color: white;
-  width: 30%;
-}
+
 h1, h2, h3 {
   text-align: center;
   font-family: 'Arial Narrow Bold', sans-serif;
